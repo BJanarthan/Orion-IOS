@@ -6,7 +6,8 @@ target 'Orion' do
   use_frameworks!
 
   # Pods for Orion
-pod 'Alamofire'
+pod 'SwiftGRPC'
+pod 'Alamofire', '~> 4.0'
   target 'OrionTests' do
     inherit! :search_paths
     # Pods for testing

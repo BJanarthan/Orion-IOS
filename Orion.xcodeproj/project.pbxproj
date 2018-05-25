@@ -17,6 +17,12 @@
 		BE55722620B2A3DC00B67467 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE55722420B2A3DC00B67467 /* LaunchScreen.storyboard */; };
 		BE55723120B2A3DC00B67467 /* OrionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE55723020B2A3DC00B67467 /* OrionTests.swift */; };
 		BE55723C20B2A3DC00B67467 /* OrionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE55723B20B2A3DC00B67467 /* OrionUITests.swift */; };
+		BEE9E40020B7E90A00E8B593 /* Tracer.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE9E3FB20B7E90A00E8B593 /* Tracer.pb.swift */; };
+		BEE9E40120B7E90A00E8B593 /* Span.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE9E3FC20B7E90A00E8B593 /* Span.pb.swift */; };
+		BEE9E40220B7E90A00E8B593 /* Trace.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE9E3FD20B7E90A00E8B593 /* Trace.pb.swift */; };
+		BEE9E40320B7E90A00E8B593 /* Tracer.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE9E3FE20B7E90A00E8B593 /* Tracer.grpc.swift */; };
+		BEE9E40420B7E90A00E8B593 /* Events.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE9E3FF20B7E90A00E8B593 /* Events.pb.swift */; };
+		BEE9E40720B7FBBC00E8B593 /* ORWebserviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE9E40620B7FBBC00E8B593 /* ORWebserviceManager.swift */; };
 		C03734365161CC4DBD527452 /* Pods_Orion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DACD61A94B486A75292EC51 /* Pods_Orion.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +63,12 @@
 		BE55723720B2A3DC00B67467 /* OrionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE55723B20B2A3DC00B67467 /* OrionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrionUITests.swift; sourceTree = "<group>"; };
 		BE55723D20B2A3DC00B67467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEE9E3FB20B7E90A00E8B593 /* Tracer.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tracer.pb.swift; sourceTree = "<group>"; };
+		BEE9E3FC20B7E90A00E8B593 /* Span.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Span.pb.swift; sourceTree = "<group>"; };
+		BEE9E3FD20B7E90A00E8B593 /* Trace.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trace.pb.swift; sourceTree = "<group>"; };
+		BEE9E3FE20B7E90A00E8B593 /* Tracer.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tracer.grpc.swift; sourceTree = "<group>"; };
+		BEE9E3FF20B7E90A00E8B593 /* Events.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.pb.swift; sourceTree = "<group>"; };
+		BEE9E40620B7FBBC00E8B593 /* ORWebserviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ORWebserviceManager.swift; sourceTree = "<group>"; };
 		CB1E87DEA85471812170506E /* Pods-Orion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Orion.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Orion/Pods-Orion.debug.xcconfig"; sourceTree = "<group>"; };
 		D99AFDB8A9D56AE703B424DA /* Pods-OrionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrionUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrionUITests/Pods-OrionUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DE43AF69C9006C854C3A6543 /* Pods-OrionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrionTests/Pods-OrionTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +141,8 @@
 		BE55721720B2A3DA00B67467 /* Orion */ = {
 			isa = PBXGroup;
 			children = (
+				BEE9E40520B7FB4600E8B593 /* WebserviceManager */,
+				BEE9E3FA20B7E90A00E8B593 /* Generated */,
 				BE55721820B2A3DA00B67467 /* AppDelegate.swift */,
 				BE55721A20B2A3DA00B67467 /* ViewController.swift */,
 				BE55721C20B2A3DA00B67467 /* Main.storyboard */,
@@ -156,6 +170,26 @@
 				BE55723D20B2A3DC00B67467 /* Info.plist */,
 			);
 			path = OrionUITests;
+			sourceTree = "<group>";
+		};
+		BEE9E3FA20B7E90A00E8B593 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				BEE9E3FB20B7E90A00E8B593 /* Tracer.pb.swift */,
+				BEE9E3FC20B7E90A00E8B593 /* Span.pb.swift */,
+				BEE9E3FD20B7E90A00E8B593 /* Trace.pb.swift */,
+				BEE9E3FE20B7E90A00E8B593 /* Tracer.grpc.swift */,
+				BEE9E3FF20B7E90A00E8B593 /* Events.pb.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		BEE9E40520B7FB4600E8B593 /* WebserviceManager */ = {
+			isa = PBXGroup;
+			children = (
+				BEE9E40620B7FBBC00E8B593 /* ORWebserviceManager.swift */,
+			);
+			path = WebserviceManager;
 			sourceTree = "<group>";
 		};
 		DFD6E90A14B64E29E69E0ED6 /* Frameworks */ = {
@@ -325,10 +359,20 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Orion/Pods-Orion-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftGRPC/SwiftGRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftGRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProtobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -378,9 +422,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEE9E40220B7E90A00E8B593 /* Trace.pb.swift in Sources */,
 				BE55722120B2A3DA00B67467 /* Orion.xcdatamodeld in Sources */,
 				BE55721B20B2A3DA00B67467 /* ViewController.swift in Sources */,
+				BEE9E40120B7E90A00E8B593 /* Span.pb.swift in Sources */,
 				BE55721920B2A3DA00B67467 /* AppDelegate.swift in Sources */,
+				BEE9E40720B7FBBC00E8B593 /* ORWebserviceManager.swift in Sources */,
+				BEE9E40020B7E90A00E8B593 /* Tracer.pb.swift in Sources */,
+				BEE9E40320B7E90A00E8B593 /* Tracer.grpc.swift in Sources */,
+				BEE9E40420B7E90A00E8B593 /* Events.pb.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
